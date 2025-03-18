@@ -10,7 +10,7 @@ const NewNewsPage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
+      try {git 
         const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=f2de8af011ec472fb9c1de564a1494d8');
         setArticles(response.data.articles);
         setLoading(false);

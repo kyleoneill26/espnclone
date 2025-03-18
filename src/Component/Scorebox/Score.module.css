@@ -14,7 +14,7 @@
   color: #48494a;
 }
 .header > h1,
-.content > h3 {
+.content > h {
   font-size: 11px;
   color: #48494a;
   display: inline;
@@ -51,6 +51,9 @@
 }
 .content > div > h1 > span {
   margin-left: 370px;
+}
+.content > div > h1 > span2 {
+  margin-right: 20px;
 }
 .content > div{
   display: flex;

@@ -1,0 +1,58 @@
+
+  
+  .teams-column {
+    width: 45%;
+   
+    
+  }
+  
+  .division-teams table {
+    width: 100%;
+  
+  }
+   .division-teams {
+    color: #ffffff;
+  }
+
+  
+  .division-teams th{
+    background-color: rgb(77, 73, 73);
+    color: #000000;
+    font-size: xx-large;
+  }
+
+  .division-teams td {
+    text-align: center;
+    padding: 8px;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+
+  }
+  .teams-table-container {
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: gray;
+  }
+  
+  .division-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .division-teams {
+    padding: 10px;
+   
+    
+  }
+  
+
+  
+  .division-teams td:hover {
+    background-color: #564848;
+  } 

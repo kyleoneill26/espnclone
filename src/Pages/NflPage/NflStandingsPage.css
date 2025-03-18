@@ -1,0 +1,19 @@
+/* Add this CSS to your existing CSS file */
+.standings-table-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.standings-column {
+   width: 45%;
+}
+
+.divison-standings table {
+  width: 100%;
+}
+
+.divison-standings tr,
+.divison-standings td {
+  text-align: left;
+  padding: 8px;
+}

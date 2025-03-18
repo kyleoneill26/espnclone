@@ -1,0 +1,20 @@
+/* Add this CSS to your existing CSS file */
+.standings-table-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .conference-column {
+    width: 45%;
+  }
+  
+  .conference-standings table {
+    width: 100%;
+  }
+  
+  .conference-standings th,
+  .conference-standings td {
+    text-align: center;
+    padding: 8px;
+  }
+  

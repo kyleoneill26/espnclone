@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Box, Text, Image, Avatar, Button } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 import Match from "./match";
 import NavbarFant from "../Fantacy-navbar/Navbar";
-import Sideimg from "../sideimg/Sideimg";
+
 const Matches = () => {
   const [data, setData] = useState([]);
 
@@ -20,7 +20,7 @@ const Matches = () => {
 
   return (
     <>
-      <NavbarFant /> <Sideimg />
+      <NavbarFant /> 
       <Box mt="4%" width="40%" p="1">
         {data.map((match) => (
           <Match key={match.id} {...match} />

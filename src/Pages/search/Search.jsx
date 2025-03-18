@@ -88,7 +88,7 @@ const Search = () => {
   return (
     <MainDiv className="search_container_Ak">
       <h2 style={{ marginLeft: "3.5%", fontWeight: "700", padding: "20px" }}>
-        SEARCH CRICINFO
+        SEARCH 
       </h2>
       <div>
         <div>
@@ -136,7 +136,7 @@ const Search = () => {
             <div style={{ borderBottom: "1px solid gray", padding: "25px" }}>
               <p>You searched for '{search}'</p>
               <h3 style={{ padding: "10px 0", fontWeight: "700" }}>
-                ESPNCRICINFO’S RECOMMENDED RESULTS
+                 RECOMMENDED RESULTS
               </h3>
               <h4
                 style={{ color: "#439EC9", margin: "0px", fontWeight: "500" }}

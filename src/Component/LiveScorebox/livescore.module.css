@@ -4,7 +4,7 @@
   display: flex;
 
   font-size: 12px;
-  padding: 0px;
+  padding: px;
   padding-left: 60px;
   gap: 20px;
 }
@@ -28,9 +28,14 @@
   padding: 10px 0px;
   margin-top: -20px;
 }
+
 .box2 > div > div > div > h1 > span {
   margin-left: 100px;
 }
+.box2 > div > div > div > h2 > span {
+  margin-right: 100px;
+}
+
 .box2 > div > div > div > h1,
 .box2 > div > div > div > h2 {
   font-size: 12px;

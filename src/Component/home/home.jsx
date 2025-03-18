@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Button } from "@chakra-ui/react";
 import Contest from "./Contest";
 import { AuthContext } from "../../context/AuthContext";
-import { Link, useRouteMatch, useParams } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import NavbarFant from "../Fantacy-navbar/Navbar";
-import Sideimg from "../sideimg/Sideimg";
+
 
 const MathInfo = () => {
   const { team } = React.useContext(AuthContext);

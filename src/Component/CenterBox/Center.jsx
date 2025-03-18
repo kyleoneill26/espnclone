@@ -1,40 +1,25 @@
 import styles from "./center.module.css";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import {
-  getnews,
-  getnewsloading,
-  getnewerror,
+
 } from "../../Redux/centrebox/action";
 import { NavBox } from "../newsbox.jsx/newdiv";
-import { FaSearch } from "react-icons/fa";
+
 import { FaAngleRight } from "react-icons/fa";
 import { Footer } from "../HomeFooter/Footer";
-import { Fetchdata } from "../../Redux/centrebox/action";
-import { RightNavBox } from "../righthand/rightnewdiv";
+
+
 import { Newsmid } from "../newsmidbox/newsmid";
 import { Score } from "../Scorebox/Score";
 export const CenterBox = ({ theme }) => {
-  const dispatch = useDispatch();
+
   const newsdisplay = useSelector((state) => state.news);
-  let [arr1, setarr] = React.useState([]);
-  const newsloading = useSelector((state) => state.loading);
-  const newserror = useSelector((state) => state.error);
 
-  React.useEffect(() => {
-    getData();
-  }, []);
 
-  function getData() {
-    let url = "https://dark-gold-firefly-gear.cyclic.app/news";
-    fetch(url)
-      .then((res) => res.json())
-      .then((res) => {
-        //console.log(res[0].storyList)
-        return dispatch(getnews(res[0].storyList));
-      })
-      .catch((error) => dispatch(getnewerror()));
-  }
+
+
+  
 
   //console.log(newsdisplay,newserror,newsloading)
   return (
@@ -45,10 +30,7 @@ export const CenterBox = ({ theme }) => {
       className={styles.centerbox1}
     >                                             
       <div>
-        <img
-          src="https://tpc.googlesyndication.com/simgad/16233217720762028300?"
-          alt="Advertisment Loading"
-        />
+        
       </div>
                                                   {/*============ Main Div ==============*/} 
       <div
@@ -73,16 +55,22 @@ export const CenterBox = ({ theme }) => {
             }
             className={styles.firstbox}
           >
-            <img
-              src="https://wassets.hscicdn.com/static/images/nlp-logo.svg"
-              alt=""
+            <h1 style={{ fontWeight: "500" }}>Upcoming Games</h1>
+            <hr
+              style={
+                theme === "light"
+                  ? { width: "100%" }
+                  : {
+                    backgroundColor: "#2b2c2d",
+                    color: "#2b2c2d",
+                    width: "100%",
+                  }
+              }
             />
-
-            <p>Which batter has the most 50+ scores in men's T20Is?</p>
-            <button>
-              {" "}
-              <FaSearch /> Ask a question
-            </button>
+          <h1 style={{ fontWeight: "500" }}>Knicks vs Pacers</h1>
+          <h1 style={{ fontWeight: "500" }}>Cubs vs Pirates</h1>
+          <h1 style={{ fontWeight: "500" }}>Rangers vs Panthers</h1>
+            
           </div>
           <div
             className={styles.keyseries}
@@ -108,82 +96,14 @@ export const CenterBox = ({ theme }) => {
                   }
               }
             />
-            <h1>
-              {" "}
-              <FaAngleRight color="#03a9f4" /> Asia Cup
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              England vs India "(W)"
-            </h1>
-            <h1>
-              {" "}
-              <FaAngleRight color="#03a9f4" /> Duleep Trophy
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              IND A - NZ A
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              England v South Africs
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Australia v Zimbabwe
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Australia v New Zealand
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              The Hundred "(M)"
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              The Hundred (W)
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              County Divl
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              County Div2
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              CPl 2022
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Women's CPL 2022
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Test Championship
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Women Championship
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              CWC Super League
-            </h1>{" "}
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              -Future series
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              -Archives
-            </h1>
+            <h1 style={{ fontWeight: "500", marginTop: "10px" }}>NBA Playoffs</h1>
+            <h1 style={{ fontWeight: "500", marginTop: "10px" }}>NHL Playoffs</h1>
+            <h1 style={{ fontWeight: "500", marginTop: "10px" }}>World Series</h1>
+            
+          
           </div>
 
           <div
-            className={styles.keyseries}
             style={
               theme === "light"
                 ? null
@@ -193,63 +113,17 @@ export const CenterBox = ({ theme }) => {
                   border: "1px solid #2b2c2d",
                 }
             }
+            className={styles.keyseries}
           >
             <h1 style={{ fontWeight: "500", marginTop: "10px" }}>
-              Quick Links
+              Players to Watch
             </h1>
             <hr style={{ width: "100%" }} />
+            <h1 style={{ fontWeight: "500", marginTop: "10px" }}>Paul Skenes - PIT</h1>
+            <h1 style={{ fontWeight: "500", marginTop: "10px" }}>Tyrese Maxey - PHI</h1>
+            <h1 style={{ fontWeight: "500", marginTop: "10px" }}>Connor Bedard - CHI</h1>
 
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Players in focus
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              T20 Time Out
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              T20 Time Out Hindi
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              ICC Rankings
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Fantasy Pick
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Haan Ya Naa
-            </h1>
-          </div>
-
-          <div
-            style={
-              theme === "light"
-                ? null
-                : {
-                  backgroundColor: "#1d1e1f",
-                  color: "white",
-                  border: "1px solid #2b2c2d",
-                }
-            }
-            className={styles.keyseries}
-          >
-            <h1 style={{ fontWeight: "500", marginTop: "10px" }}>
-              ESPncricinfo Apps
-            </h1>
-            <hr style={{ width: "100%" }} />
-
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Android App
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              IOS App
-            </h1>
+            
           </div>
           <div
             style={
@@ -264,7 +138,7 @@ export const CenterBox = ({ theme }) => {
             className={styles.keyseries}
           >
             <h1 style={{ fontWeight: "500", marginTop: "10px" }}>
-              Follow ESPNcricinfo
+              Follow Me
             </h1>
             <hr style={{ width: "100%" }} />
 
@@ -298,18 +172,11 @@ export const CenterBox = ({ theme }) => {
             className={styles.keyseries}
           >
             <h1 style={{ fontWeight: "500", marginTop: "10px" }}>
-              ESPncricinfo Sites
+              Placer holder
             </h1>
             <hr style={{ width: "100%" }} />
 
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              The Cricket Monthly
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              ESPN
-            </h1>
+           
           </div>
         </div>
                                                    {/*============ Mid Div ==============*/}
@@ -325,15 +192,9 @@ export const CenterBox = ({ theme }) => {
               }
           }
         >                                              
-          <img
-            src="https://tpc.googlesyndication.com/simgad/17909822381541812721?"
-            alt="adImage"
-          />
+          
 
-          <img
-            src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_720/lsci/db/PICTURES/CMS/345300/345311.6.jpg"
-            alt="adimg"
-          />
+          
 
           <div
             style={
@@ -346,11 +207,34 @@ export const CenterBox = ({ theme }) => {
                 }
             }
             className={styles.newsfeed}
+
           >
-            <p>Well-rounded Afghanistan look to bounce back against Pakistan</p>
+
+            
+            <div className={styles.midbox} style={theme === "light" ? null : {backgroundColor: "#1d1e1f", color: "white", border: "1px solid #2b2c2d"}}>
+    <div className={styles.carouselContainer}>
+        <div className={styles.carouselSlide}>
+            <img src="https://images.squarespace-cdn.com/content/v1/59619e059de4bb7b8d0c4f02/1547249301674-AY3G86KNT4WQHP0AJG6L/NFL-Banner.png" alt="Description"/>
+            <p>NFL</p>
+        </div>
+        <div className={styles.carouselSlide}>
+            <img src="https://cdn.imgbin.com/1/19/9/imgbin-nba-logo-national-basketball-league-brand-nba-playoffs-aDxPqvmXxQzf59sAftuzRLnf6.jpg" alt="Description"/>
+            <p>NBA</p>
+        </div>
+        <div className={styles.carouselSlide}>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/db9ed8c9-b18e-40d7-9b96-eb34d64138e6/dfz7pdw-08f67cd8-97e4-469e-a079-ae1c94f6f593.png" alt="Description"/>
+            <p>NBA</p>
+        </div>
+        <div className={styles.carouselSlide}>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbKnZSO7pzgDVHFWTGLXdC9P0xwgH6zUYXhA&s" alt="Description"/>
+            <p>NBA</p>
+        </div>
+        
+       
+    </div>
+</div>
             <p>
-              A win will take Pakistan closure to the final while Afghanistan
-              will be keen to open their account in the Super 40's
+            Place Holder
             </p>
           </div>
           <hr />
@@ -358,12 +242,12 @@ export const CenterBox = ({ theme }) => {
            {/*======= Current Math Scores =======*/}
           <Score
             info={{
-              team1: "India A",
-              team2: "New Zealand A",
-              score: "(55ov) 201/5",
-              status: "Day2 NZ choose to field",
-              con: "Tom Bruce : free spirit who's found his identity ",
-              head: "2ND FOUR-DAY GAME,HUBLI",
+              team1: "Phillies",
+              team2: "Braves",
+              score: "(5 2",
+              status: "Final",
+              con: "Bryce Harper hits a grandslam to walk it off ",
+              head: "Game 5",
               image1:
                 "https://purecatamphetamine.github.io/country-flag-icons/3x2/IN.svg",
               image2:
@@ -381,9 +265,9 @@ export const CenterBox = ({ theme }) => {
               gridRow: "1",
             }}
           >
-            {newsdisplay.map((news) =>
-              news.story === undefined ? (
-                console.log("News 1st",news)
+            {newsdisplay.map((article) =>
+              article.title === undefined ? (
+                console.log("News 1st",article)
               ) : (
                 null
               )
@@ -404,11 +288,11 @@ export const CenterBox = ({ theme }) => {
             </div>
           </div> 
 
-          {newsdisplay.map((news) =>
-            news.story === undefined ? (
-              console.log("News 2nd",news)
+          {newsdisplay.map((articles) =>
+            articles.title === undefined ? (
+              console.log("News 2nd",articles)
             ) : (
-              <NavBox key={news.story.id} theme={theme} info={news.story} />
+              <NavBox key={articles.title} theme={theme} info={articles.description} />
             )
           )}
           
@@ -432,58 +316,9 @@ export const CenterBox = ({ theme }) => {
             </h1>
             <hr style={{ width: "100%" }} />
 
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Rizwan is the new No.1 T20I batter{" "}
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              T20 WC:England call up Hales
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Asia Cup: Can India make the final?
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Kallis Joins Pretoria Capitals staff
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Pak recall Ameen for Asia Cup
-            </h1>
-            <h1>
-              <FaAngleRight color="#03a9f4" />
-              Did NZ take a backward?
-            </h1>
+            
           </div>
-          <img
-            src="https://tpc.googlesyndication.com/simgad/14828744798620350827?"
-            alt="adImage"
-          />
-          <img
-            src="https://tpc.googlesyndication.com/simgad/2819355493784373752?"
-            alt="ad"
-          />
-          <img
-            src="https://tpc.googlesyndication.com/simgad/11639078905771269026?"
-            alt="ad"
-          />
-          {newsdisplay.map((news) =>
-            news.story === undefined ? (
-              console.log(news)
-            ) : (
-              <RightNavBox
-                key={news.story.id}
-                theme={theme}
-                info={news.story}
-              />
-            )
-          )}
-          <img
-            src="https://tpc.googlesyndication.com/simgad/14765500984849215753?"
-            alt="g"
-          />
+         
         </div>
       </div>
                                                   {/*============ Footer Div ==============*/}

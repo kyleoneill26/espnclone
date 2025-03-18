@@ -24,7 +24,7 @@ import { AuthContext } from "../../context/AuthContext";
 
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import NavbarFant from "../Fantacy-navbar/Navbar";
-import Sideimg from "../sideimg/Sideimg";
+
 
 const Playerlist = ({ team1, team2 }) => {
   const { setTeamfn } = React.useContext(AuthContext);

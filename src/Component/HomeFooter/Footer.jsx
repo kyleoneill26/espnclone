@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import { FaAngleRight } from "react-icons/fa";
+
 export const Footer = ({ theme }) => {
   return (
     <>
@@ -40,14 +40,13 @@ export const Footer = ({ theme }) => {
                     }
               }
             />
-            <h1> Asia Cup</h1> <h1>England vIndia "(W)"</h1>
-            <h1> Duleep Trophy</h1> <h1>IND A - NZ A</h1>
-            <h1>England v South Africs</h1> <h1>Australia v Zimbabwe</h1>
-            <h1>Australia v New Zealand</h1> <h1>The Hundred "(M)"</h1>
-            <h1>The Hundred (W)</h1> <h1>County Divl</h1>
-            <h1>County Div2</h1> <h1>CPl 2022</h1>
-            <h1>Women's CPL 2022</h1> <h1>Test Championship</h1>
-            <h1>Women Championship</h1>
+            <h1> Wolrd Series</h1> 
+            <h1> NBA FInals</h1>
+            <h1>Superbowl</h1> 
+            <h1>CFP Playoffs</h1> 
+            <h1>World Cup</h1> 
+            <h1>Olympics</h1> 
+          
           </div>
           <div
             style={
@@ -62,12 +61,12 @@ export const Footer = ({ theme }) => {
             </h1>
             <hr style={{ width: "100%" }} />
 
-            <h1>Players in focus</h1>
-            <h1>T20 Time Out</h1>
-            <h1>T20 Time Out Hindi</h1>
-            <h1>ICC Rankings</h1>
-            <h1>Fantasy Pick</h1>
-            <h1>Haan Ya Naa</h1>
+            <h1>NFL</h1>
+            <h1>NBA</h1>
+            <h1>NHL</h1>
+            <h1>MLB</h1>
+            <h1>NCAA</h1>
+           
           </div>
           <div
             style={
@@ -78,7 +77,7 @@ export const Footer = ({ theme }) => {
             className={styles.keyseries}
           >
             <h1 style={{ fontWeight: "700", marginTop: "10px" }}>
-              ESPncricinfo Apps
+              ESPN Apps
             </h1>
             <hr style={{ width: "100%" }} />
 
@@ -94,7 +93,7 @@ export const Footer = ({ theme }) => {
             className={styles.keyseries}
           >
             <h1 style={{ fontWeight: "700", marginTop: "10px" }}>
-              Follow ESPNcricinfo
+              Follow 
             </h1>
             <hr style={{ width: "100%" }} />
 
@@ -112,12 +111,12 @@ export const Footer = ({ theme }) => {
             className={styles.keyseries}
           >
             <h1 style={{ fontWeight: "700", marginTop: "10px" }}>
-              ESPncricinfo Sites
+              Created By
             </h1>
             <hr style={{ width: "100%" }} />
 
-            <h1>The Cricket Monthly</h1>
-            <h1>ESPN</h1>
+            <h1>Kyle ONeill</h1>
+            <h1></h1>
           </div>
         </div>
       </div>
@@ -133,7 +132,7 @@ export const Footer = ({ theme }) => {
           Terms of Use | Private policy | Interest-Based Ads | Addendum to the
           Global Private Policy | Feedback
         </h1>
-        <h2>2022 ESPn Sports Media Ltd. All rights reserved</h2>
+        <h2>ESPN . All rights reserved</h2>
       </div>
     </>
   );

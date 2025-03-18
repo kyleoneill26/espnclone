@@ -1,0 +1,70 @@
+
+
+.news-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    align-self: center;
+}
+
+.news-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.news-link:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+.mainbox>img{
+    width:100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+
+/* NewNewsPage.css */
+.news-item {
+    display: flex;
+    align-items: start; /* Align items at the start of the box */
+    width: 100%; /* Full width of the container or a specific width */
+    height: 300px; /* Fixed height */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* Ensures content does not overflow the box dimensions */
+}
+
+.imagenews {
+    width: 150px;
+    height: 150px; /* Fixed height for images */
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    margin-right: 20px;
+}
+
+.news-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-title, .news-description {
+    overflow: hidden; /* Prevents text overflow */
+    text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
+    white-space: nowrap; /* Keeps the text on one line */
+}

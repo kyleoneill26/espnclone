@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Avatar, Image } from "@chakra-ui/react";
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { Tabs, TabList, Tab } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const NavbarFant = () => {
@@ -17,12 +17,12 @@ const NavbarFant = () => {
         display="flex"
         w="40%"
       >
-        <Avatar size="sm" src="https://bit.ly/broken-link" />
+        <Avatar size="sm" src="https://banner2.cleanpng.com/20180616/uwj/kisspng-logo-page-footer-espn-magazine-5b2595a9b68169.9402522815291898017476.jpg" />
         <Image
           ml="30%"
           h="5"
           w="50"
-          src="https://espn.wonderwins.com/assets/images/header_logo.png"
+          src="https://banner2.cleanpng.com/20180616/uwj/kisspng-logo-page-footer-espn-magazine-5b2595a9b68169.9402522815291898017476.jpg"
         ></Image>
       </Box>
       <Box>

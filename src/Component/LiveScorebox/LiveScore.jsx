@@ -1,11 +1,11 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { themecontext } from "../../context/themecontext";
-import { Carousel } from "@trendyol-js/react-carousel";
+
 import styles from "./livescore.module.css";
 import { Score } from "../Scorebox/Score";
 export const LiveScoreBox = () => {
-  const { theme, handleTheme } = React.useContext(themecontext);
+  const { theme } = React.useContext(themecontext);
 
   return (
     <div
@@ -21,15 +21,7 @@ export const LiveScoreBox = () => {
       className={styles.mainb}
     >
       <Box paddingLeft="60px" className={styles.box1} w="100%" p={4}>
-        <p>Matches(12)</p>
-        <p>Asia cup(1)</p>
-        <p>NZ-A in IND(1)</p>
-        <p>ENG v SA(1)</p>
-        <p>Duleep Trophy(2)</p>
-        <p>Indian Women in England (1)</p>
-        <p>SL-U19 in ENg(1)</p>
-        <p>CPL(2)</p>
-        <p>CAN T20(3)</p>
+        
       </Box>
       <div
         style={
@@ -45,61 +37,65 @@ export const LiveScoreBox = () => {
       >
         <Score
           info={{
-            team1: "England A",
-            team2: "South Africa  A",
-            score: "(15ov) 101/5",
+            team1: "Phillies",
+            team2: "Braves",
+            team1_score: "5",
+            team2_score: "6",
             //   status:"Day2 NZ choose to field",
-            con: "Day1 SA choose to field",
+          
             //   head:"2ND FOUR-DAY GAME,HUBLI",
             image1:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/EG.svg",
+              `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/philadelphia-phillies.svg`,
             image2:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/SA.svg",
+            `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/atlanta-braves.svg`,
           }}
           theme={theme}
         />
         <Score
           info={{
-            team1: "India A",
-            team2: "New Zealand A",
-            score: "(55ov) 201/5",
-            con: "Day2 NZ choose to field",
+            team1: "Yankees",
+            team2: "Mets",
+            team1_score: "1",
+            team2_score: "5",
+         
             // //  con:"Tom Bruce : free spirit who's found his identity ",
             //   head:"2ND FOUR-DAY GAME,HUBLI",
             image1:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/IN.svg",
+            `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/new-york-yankees.svg`,
             image2:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/NZ.svg",
+            `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/new-york-mets.svg`,
           }}
           theme={theme}
         />
         <Score
           info={{
-            team1: "Srilanka A",
-            team2: "West Indies A",
-            score: "(19ov) 151/8",
-            con: "Day2 WI choose to Batting",
+            team1: "Astros",
+            team2: "Dodgers",
+            team1_score: "5",
+            team2_score: "6",
+            
             //   con:"Tom Bruce : free spirit who's found his identity ",
 
             image1:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/LK.svg",
+            `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/houston-astros.svg`,
             image2:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/VI.svg",
+            `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/los-angeles-dodgers.svg`,
           }}
           theme={theme}
         />
         <Score
           info={{
-            team1: "America A",
-            team2: "Pakistan A",
-            score: "(3ov) 21/2",
-            con: "Day3 PK choose to field",
+            team1: "Cubs",
+            team2: "Redsox",
+            team1_score: "5",
+            team2_score: "6",
+            con: "",
             //   con:"Tom Bruce : free spirit who's found his identity ",
             //   head:"2ND FOUR-DAY GAME,HUBLI",
             image1:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg",
+            `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/chicago-cubs.svg`,
             image2:
-              "https://purecatamphetamine.github.io/country-flag-icons/3x2/PK.svg",
+            `https://raw.githubusercontent.com/marc-wilson/mlb-logos/4668e5e59dd8afcde8819211d03604e631a0ed98/logos/2018/boston-red-sox.svg`,
           }}
           theme={theme}
         />

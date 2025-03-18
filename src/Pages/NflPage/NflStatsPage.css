@@ -1,0 +1,37 @@
+.stats-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+
+.team-name {
+    width: 300px;
+}
+
+
+
+.category-box {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.category-heading {
+    font-size: 20px;
+    margin-bottom: 10px;  
+    
+}
+
+.stat-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; /* Light line between items */
+    margin-bottom: 5px;
+}
+
+

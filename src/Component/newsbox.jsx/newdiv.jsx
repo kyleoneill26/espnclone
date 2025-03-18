@@ -3,7 +3,7 @@ import styles from "./newdiv.module.css"
 
 let imgarr=[
     
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcF4RzKYHWEGg4nMND0KWR4GdzIgWWkBVyjQ&usqp=CAU",
+    "https://encrypted-tbn0.https://dims.apnews.com/dims4/default/8d34e99/2147483647/strip/true/crop/7098x4732+0+0/resize/567x378!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F5a%2F07%2Fa0e75d837c5df755e738d65a40fb%2Fc103b4df62114bbcad2a35ffc77dbbe3.com/images?q=tbn:ANd9GcTcF4RzKYHWEGg4nMND0KWR4GdzIgWWkBVyjQ&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNu54tTRRCKQ7yhyck8mvX440QodlqcUaFxA&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-BfW5qht04iHrdbCdgng8ct1Sm2xW9J0vQ&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vXx7IFPlQHvFe3HIbiCX0tdE7GPb80-EyA&usqp=CAU",

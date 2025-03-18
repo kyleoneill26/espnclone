@@ -57,7 +57,7 @@
 }
 
 .keyseries>h1:hover {
-    background-color: #bbe3f5;
+    background-color: #424444;
 }
 
 .firstbox>img {
@@ -125,4 +125,17 @@
     font-size: 23px;
     font-weight: 700;
     margin-bottom: 2%;
+}
+
+.carouselContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carouselSlide {
+    flex: 0 0 auto;
+    width: 100%; /* Set to the width of your slides */
+    scroll-snap-align: start;
+    text-align: center;
 }

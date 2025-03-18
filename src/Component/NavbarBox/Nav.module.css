@@ -59,12 +59,14 @@
   grid-template-columns: repeat(2, 2fr);
   color: black;
   background-color: white;
-  padding: 2% 4% 2% 2%;
-  top: 50%;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  padding: 1% 4% 1% 1%;
+  top: 100%;
+  
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: rgba(19, 126, 208, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .dropdown > h1:hover {
   background-color: #bbe3f5;
 }
+

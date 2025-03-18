@@ -1,7 +1,7 @@
 import styles from "./Score.module.css";
 
 export const Score = (props) => {
-  let { team1, team2, score, status, con, head, image1, image2 } = props.info;
+  let { team1, team2, team1_score,team2_score, status, con, head, image1, image2 } = props.info;
   let theme = props.theme;
   return (
     <div
@@ -46,7 +46,7 @@ export const Score = (props) => {
               : { backgroundColor: "#1d1e1f", color: "white" }
           }
         >
-          LIVES - Updates Only{" "}
+          
         </p>
 
         <div>
@@ -62,21 +62,27 @@ export const Score = (props) => {
                 : { backgroundColor: "#1d1e1f", color: "white" }
             }
           >
-            {team1} <span>{score}</span>
+            {team1} <span>{team1_score}</span>
+           
           </h1>
         </div>
         
         <div>
-          <img style={{ width: "20px" }} src={image2} alt="hy" />{" "}
-          <h2
+          <img
+            style={{ width: "20px", display: "inline" }}
+            src={image2}
+            alt="hy"
+          />{" "}
+          <h1
             style={
               theme === "light"
                 ? null
                 : { backgroundColor: "#1d1e1f", color: "white" }
             }
           >
-            {team2}
-          </h2>
+            {team2} <span>{team2_score}</span>
+           
+          </h1>
         </div>
         <h3
           style={

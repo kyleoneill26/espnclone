@@ -4,11 +4,11 @@ import { createContext } from "react";
 export const themecontext = createContext();
 
 export const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setTheme] = React.useState("dark");
   const [AuthenticationForNav, setAuthentication] = React.useState(true);
 
   function handleTheme() {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
   }
   function handleChangeAuth(val) {
     setAuthentication(val);

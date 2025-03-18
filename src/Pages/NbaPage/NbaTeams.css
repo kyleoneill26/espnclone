@@ -1,0 +1,52 @@
+/* styles.css */
+.container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    background-color: gray;
+    color: #060606;
+  }
+ 
+  .p{
+    font-size: xx-large;
+    border-radius: 5px;
+  }
+  
+  .header {
+   
+    color: #000000;
+    font-size: xx-large;
+   
+    border-radius: 5px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 10px; 
+    align-items: start; 
+  }
+  
+  .player-card {
+    background: #f9f9f9;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 150px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .player-card div {
+    margin: 2px 0;
+  }
+  

@@ -1,0 +1,65 @@
+
+  
+  .standings-column {
+    width: 45%;
+   
+    
+  }
+  
+  .conference-standings table {
+    width: 100%;
+  
+  }
+   .conference-standings {
+    color: #ffffff;
+  }
+
+  
+  .conference-standings th{
+    background-color: rgb(77, 73, 73);
+    color: #000000;
+    font-size: xx-large;
+  }
+
+  .conference-teams th {
+    text-align: center;
+    padding: 8px;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+
+  }
+  .standings-table-container {
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: gray;
+  }
+  
+  .standings-table-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+  }
+  
+
+  
+  .conference-standings {
+    padding: 10px;
+   
+    
+  }
+  h2 {
+    text-align: center;
+    font-size:xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+   }
+
+   .conference-standings th,
+   .conference-standings td {
+     text-align: center;
+     padding: 8px;
+   }
